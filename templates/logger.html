@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logger</title>
+</head>
+<body>
+    <form action="/logger" method="GET">
+        <p>Please enter some logg:</p>
+        <input type="text" id="input1">
+        <input type="submit" id="log1" onclick="addLog()">
+
+        <script>
+            function addLog(){
+                var idInput = document.getElementById("input1").value;
+                console.log(log);
+        
+                // change the value of the li with the id logRender
+                document.getElementById("logRender").innerText = "the log you entered is : " + idInput;
+            }
+        </script>
+
+    </form>
+
+    <p id="logRender">
+        no log entered for the moment
+    </p>
+    
+</body>
+
+</html>
